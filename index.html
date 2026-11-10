@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#efefed">
+  <meta name="description" content="Alexander Peralta Jr is a computer engineering student at the University of Georgia exploring embedded systems, sensing, and robotics.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Alexander Peralta Jr — Computer Engineering Student">
+  <meta property="og:description" content="Projects and experience in embedded systems, sensing, and robotics by Alexander Peralta Jr.">
+  <title>Alexander Peralta Jr — Computer Engineering Student</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Alexander Peralta Jr, home">ALEXANDER PERALTA JR<span> /</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">
+      <span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#about">About</a><a href="#projects">Portfolio</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero section-wrap">
+      <p class="eyebrow">COMPUTER ENGINEERING · UNIVERSITY OF GEORGIA</p>
+      <h1>COMPUTER<br><span>ENGINEERING</span><br>STUDENT<span class="period">.</span></h1>
+      <div class="hero-bottom">
+        <p class="hero-statement">Building at the intersection of code and the physical world.</p>
+        <div class="hero-intro"><p>I’m Alexander, a first-year computer engineering student exploring embedded systems, intelligent sensing, and robotics through hands-on projects.</p><a class="button button-primary" href="#projects">VIEW SELECTED WORK <span aria-hidden="true">↓</span></a></div>
+      </div>
+      <a class="scroll-cue" href="#about">SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section id="about" class="section section-wrap about-section">
+      <div class="about-title"><p class="eyebrow">01 / ABOUT ME</p><h2>CURIOUS BY<br>DESIGN<span class="period">.</span></h2></div>
+      <div class="about-layout">
+        <figure class="about-photo"><img src="assets/images/profile.png" alt="Alexander Peralta Jr outside the University of Georgia Driftmier Engineering Center"><figcaption>ATHENS, GEORGIA · UNIVERSITY OF GEORGIA</figcaption></figure>
+        <div class="about-content"><p class="lead">I like turning questions into working systems—starting with a circuit, a sensor, or a small piece of code, then learning from what happens in the real world.</p><p>At the University of Georgia, I’m building a foundation in computer engineering while developing projects with ESP32 and Arduino hardware. I’m especially interested in embedded systems, intelligent sensing, robotics, and cyber-physical systems.</p><div class="interest-row"><span>AREAS I’M EXPLORING</span><div><b>Embedded systems</b><b>Robotics</b><b>Intelligent sensing</b><b>Cyber-physical systems</b></div></div></div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-wrap projects-section">
+      <div class="section-topline"><div><p class="eyebrow">02 / Portfolio</p><h2>SELECTED<br>PROJECTS<span class="period">.</span></h2></div><p class="section-aside">TEAM BUILDS · INDEPENDENT PROJECTS</p></div>
+      <div class="project-grid">
+        <article class="project-card project-featured">
+          <div class="project-visual visual-load" aria-hidden="true"><div class="visual-grid"></div><div class="meter"><span>LOAD</span><strong>01</strong><i></i></div><div class="visual-wire"></div><span class="visual-label">SENSE → DECIDE → SWITCH</span></div>
+          <div class="project-meta"><span>IEEE · Team project</span><span>Oct 2026 — Present</span></div>
+          <h3>Load Killer</h3>
+          <p>A proposed smart standby-power controller that monitors appliance consumption and can disconnect idle loads through a microcontroller and relay.</p>
+          <ul class="tag-list"><li>ESP32</li><li>Current sensing</li><li>ADC</li><li>Power monitoring</li></ul>
+          <p class="project-detail">Working on a sensing approach with a clip-on current transformer, isolated voltage sensing, signal conditioning, and ADC sampling to estimate RMS voltage, RMS current, and real power. The team is planning threshold-based idle detection and a small energy-savings display.</p>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-sensor" aria-hidden="true"><div class="sensor-screen"><span>ROOM / LIVE</span><strong>22.4°</strong><small>HUMIDITY&nbsp; 48%</small><div class="screen-wave"></div></div><div class="sensor-dot"></div></div>
+          <div class="project-meta"><span>Independent project</span><span>Jul 2026</span></div>
+          <h3>ESP32 Environment Monitor</h3>
+          <p>Reads temperature and humidity from a DHT11 sensor and refreshes the measurements on an I²C-connected LCD1602.</p>
+          <ul class="tag-list"><li>ESP32</li><li>MicroPython</li><li>DHT11</li><li>I²C</li></ul>
+          <p class="project-detail">Added Fahrenheit conversion and a sensor-error message for failed readings, then troubleshot communication between the sensor and display.</p>
+        </article>
+        <article class="project-card">
+          <div class="project-visual visual-reaction" aria-hidden="true"><div class="reaction-pad"><span class="light light-red"></span><span class="light light-green"></span><span class="button-dot"></span></div><span class="reaction-signal">READY <b>→</b> GO</span></div>
+          <div class="project-meta"><span>Independent project</span><span>May 2026</span></div>
+          <h3>Two-Player Reaction Game</h3>
+          <p>An Arduino game that recognizes the first player to press their button, lights the winner’s LED, and sounds a buzzer.</p>
+          <ul class="tag-list"><li>Arduino</li><li>Digital I/O</li><li>C++</li></ul>
+          <p class="project-detail">Wrote first-press detection and winner-lockout logic so later button presses cannot change the result.</p>
+        </article>
+        <article class="project-card project-compact">
+          <div class="compact-mark" aria-hidden="true"><span>R</span><span>Y</span><span>G</span></div>
+          <div><div class="project-meta"><span>Independent project</span><span>Jun 2026</span></div><h3>Arduino Traffic-Light Controller</h3><p>Programmed timed state changes for a three-stage traffic signal using separate digital outputs for red, yellow, and green LEDs.</p><ul class="tag-list"><li>Arduino</li><li>Digital outputs</li></ul></div>
+        </article>
+        <article class="project-card project-compact">
+          <div class="compact-mark pcb-mark" aria-hidden="true"><span>Ki</span><i></i></div>
+          <div><div class="project-meta"><span>KiCad exercises</span><span>Aug 2026</span></div><h3>Schematic & PCB Design</h3><p>Created circuit schematics and PCB layouts, placed components, routed copper traces, and used design-rule checks to review clearances and connections.</p><ul class="tag-list"><li>KiCad</li><li>Schematics</li><li>PCB layout</li></ul></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section section-wrap experience-section">
+      <div class="section-topline"><div><p class="eyebrow">03 / EXPERIENCE & SERVICE</p><h2>EXPERIENCE &<br>SERVICE<span class="period">.</span></h2></div><p class="section-aside">LEADERSHIP · FINANCIAL SERVICES · COMMUNITY</p></div>
+      <div class="timeline">
+        <article class="timeline-item"><div class="timeline-date">Jun 2025 — Jul 2026</div><div class="timeline-body"><p class="timeline-type">Professional experience · Cumming, GA</p><h3>Teller Intern <span>at Delta Community Credit Union</span></h3><ul><li>Assisted members with deposits, withdrawals, and account services while accurately recording and reconciling transactions.</li><li>Balanced cash drawers and verified financial records with care for confidentiality and detail.</li></ul></div></article>
+        <article class="timeline-item"><div class="timeline-date">2026 — Present</div><div class="timeline-body"><p class="timeline-type">Leadership · Athens, GA</p><h3>First-Year Council Member <span>at IEEE</span></h3><ul><li>Selected for IEEE’s First-Year Council and collaborating with peers on the Load Killer design project.</li></ul></div></article>
+        <article class="timeline-item"><div class="timeline-date">May 2024 — May 2026</div><div class="timeline-body"><p class="timeline-type">Leadership & service · Metro Atlanta</p><h3>Officer <span>at Uplift Academy</span></h3><ul><li>Helped lead coding workshops for more than 200 students and raised $3,500 for laptops sent to schools in India.</li><li>Organized weekly coding sessions for underserved youth; the volunteer work was featured in Forsyth County News.</li></ul></div></article>
+      </div>
+    </section>
+
+    <section id="education" class="section section-wrap education-section">
+      <div class="education-card"><div class="education-mark" aria-hidden="true">UGA<span>•</span></div><div class="education-copy"><p class="eyebrow">04 / EDUCATION</p><h2>University of Georgia</h2><p class="degree">Computer Engineering <span>(intended)</span></p><p>College of Engineering · Athens, Georgia</p><p class="coursework"><strong>Expected May 2029</strong><span>GPA 4.0 / 4.0</span></p><p class="coursework-note">Relevant coursework: Introduction to Electrical and Computer Systems Engineering, Calculus II, Physics I, and Programming Fundamentals.</p></div></div>
+      <div class="certifications"><div><p class="eyebrow">Certifications</p><h3>Learning the tools<br>to build what’s next.</h3></div><ul><li><span>01</span>Microsoft Python Programming Fundamentals</li><li><span>02</span>Data Analysis and Visualization with Python <small>2026</small></li></ul></div>
+    </section>
+
+    <section id="skills" class="section section-wrap skills-section">
+      <p class="eyebrow">05 / TECHNICAL TOOLKIT</p><div class="skills-layout"><h2>TOOLS &<br>TECHNOLOGIES<span class="period">.</span></h2><div class="skill-groups"><div><h3>Programming</h3><p>Python · MicroPython · C++ · Arduino programming · Java · SQL</p></div><div><h3>Hardware & systems</h3><p>ESP32 · Arduino · GPIO · DHT11 · I²C LCD · Digital I/O</p></div><div><h3>Design & development</h3><p>PlatformIO · Visual Studio Code · KiCad · Multisim · Schematic capture · PCB layout</p></div></div></div>
+    </section>
+
+    <section id="resume" class="section section-wrap resume-section">
+      <div class="resume-note"><p class="eyebrow">06 / RÉSUMÉ</p><h2>THE ONE-PAGE<br>OVERVIEW<span class="period">.</span></h2><p>Your current résumé PDF includes a personal email address and phone number. It isn’t included here yet; add a public-ready copy after removing contact details you don’t want on the open web.</p></div>
+      <div class="resume-file"><div class="file-icon" aria-hidden="true">PDF</div><div><strong>Public résumé PDF</strong><span>Not added yet</span></div><span class="file-lock" aria-label="Not currently available">—</span></div>
+    </section>
+
+    <section id="contact" class="contact-section section-wrap">
+      <p class="eyebrow">07 / CONTACT</p><h2>LET’S BUILD<br>SOMETHING<span class="period">.</span></h2><p>I’m interested in faculty-led research and conversations about embedded systems, intelligent sensing, and robotics.</p><p class="contact-placeholder">Public contact details are intentionally omitted. Add a public email or profile link if you want visitors to contact you here.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer section-wrap"><a class="wordmark" href="#top">AP<span>.</span></a><p>Computer Engineering Student <span>·</span> University of Georgia</p><a href="#top" class="back-top">Back to top ↑</a><small>© <span id="year">2026</span> Alexander Peralta Jr</small></footer>
+</body>
+</html>
